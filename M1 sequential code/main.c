@@ -11,8 +11,7 @@ int main(){
     printf("%s","please Enter the character : \n"); 
     scanf("%c",&input);
 
-
- //open the file to count the number of chars
+     //open the file to count the number of chars
     fp = fopen ("test.txt", "rb");
     if (fp)
     {
@@ -27,26 +26,17 @@ int main(){
         fclose (fp);
     }
 
-
-
     for (int i = 0; i < length; i++)
     {
         if (buffer[i] == input)
         {
-            buffer[i] = (char)toupper(input);
-            
+            buffer[i] = (char)toupper(input);   
         }
-        
     }
-
-
 
     fp = fopen("test.txt", "w+");
     fputs(buffer, fp);
     printf("%s",buffer);
     fclose(fp);
-
-
-
    return 0;
 }
