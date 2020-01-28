@@ -1,0 +1,7 @@
+In conTinuuM Mechanics, sTRess is a physical quanTiTy ThaT expResses The inTeRnal foRces ThaT neiGhbouRinG paRTicles of a conTinuous 
+MaTeRial exeRT on each oTheR, while sTRain is The MeasuRe of The defoRMaTion of The MaTeRial which is noT a physical quanTiTy . FoR 
+exaMple, when a solid veRTical baR is suppoRTinG an oveRhead weiGhT, each paRTicle in The baR pushes on The paRTicles iMMediaTely below iT.
+When a liquid is in a closed conTaineR undeR pRessuRe, each paRTicle GeTs pushed aGainsT by all The suRRoundinG paRTicles.
+The conTaineR walls and The pRessuRe-inducinG suRface (such as a pisTon) push aGainsT TheM in (NewTonian) ReacTion.
+These MacRoscopic foRces aRe acTually The neT ResulT of a veRy laRGe nuMbeR of inTeRMoleculaR foRces and collisions beTween The paRTicles
+in Those Molecules. STRess is fRequenTly RepResenTed by a loweRcase GReek leTTeR siGMa—Ô
