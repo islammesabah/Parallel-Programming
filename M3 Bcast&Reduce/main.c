@@ -35,13 +35,10 @@ int main(int argc, char* argv[]){
 		buffer[length]='\0';
 	    long mLength = (length+1) / p;
 	    if(mLength == 0) mLength=1;
-	    for(int i = 1;i<p;++i){
-			char  out[mLength];
-			MPI_Bcast(&input,1,MPI_CHAR,0,MPI_COMM_WORLD);
-			MPI_Bcast(&mLength,1,MPI_LONG,0,MPI_COMM_WORLD);
-			MPI_Bcast(&length,1,MPI_LONG,0,MPI_COMM_WORLD);
-			MPI_Bcast(&buffer[0],length,MPI_CHAR,0,MPI_COMM_WORLD);
-		}
+		MPI_Bcast(&input,1,MPI_CHAR,0,MPI_COMM_WORLD);
+		MPI_Bcast(&mLength,1,MPI_LONG,0,MPI_COMM_WORLD);
+		MPI_Bcast(&length,1,MPI_LONG,0,MPI_COMM_WORLD);
+		MPI_Bcast(&buffer[0],length,MPI_CHAR,0,MPI_COMM_WORLD);
 		char out[length];
 		memcpy( out, buffer, mLength);
 		for (int i = 0; i < mLength; i++){
@@ -61,7 +58,6 @@ int main(int argc, char* argv[]){
 			memcpy(&out[mLength*i],&recieved[mLength*i],subleng);
 	    }
 		out[length]='\0';
-		printf("the out is ---> %s \n",(out));
 		fp = fopen("test.txt", "w+");
 	    fputs(out, fp);
 	    fclose(fp);

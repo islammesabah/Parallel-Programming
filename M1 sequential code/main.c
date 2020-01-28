@@ -25,7 +25,7 @@ int main(){
         }
         fclose (fp);
     }
-
+    buffer[length]='\0';
     for (int i = 0; i < length; i++)
     {
         if (buffer[i] == input)
@@ -34,9 +34,8 @@ int main(){
         }
     }
 
-    fp = fopen("test.txt", "w+");
-    fputs(buffer, fp);
-    printf("%s",buffer);
-    fclose(fp);
+   fp = fopen("test.txt", "w+");
+   fputs(buffer, fp);
+   fclose(fp);
    return 0;
 }
